@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Лекция — EduPlatform</title>
+  <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="logo">EduPlatform</div>
+      <nav class="nav">
+        <a href="index.html">Главная</a>
+        <a href="course.html">К курсу</a>
+      </nav>
+    </div>
+  </header>
+  <section class="container" style="margin-top:32px;max-width:700px;">
+    <h1 style="color:var(--red);">Лекция 1: Введение в Python</h1>
+    <img src="images/python_intro.png" alt="Python" style="width:100%;max-width:400px;display:block;margin:24px auto 18px auto;border-radius:18px;box-shadow:0 4px 24px rgba(229,57,53,0.08);">
+    <div style="font-size:1.1rem;line-height:1.7;margin-bottom:32px;">
+      <p>Python — это современный, простой и мощный язык программирования. Он отлично подходит для начинающих и профессионалов.</p>
+      <div style="background:var(--peach);padding:12px 18px;border-radius:12px;margin:18px 0;">💡 <b>Интерактив:</b> Наведи на <span style="color:var(--red);font-weight:600;cursor:pointer;" title="Язык программирования — формальный язык для описания алгоритмов.">язык программирования</span>, чтобы узнать больше!</div>
+    </div>
+    <a href="#" class="role-btn" style="width:100%;max-width:320px;display:block;margin:0 auto 24px auto;">Следующая лекция →</a>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <span>© 2024 EduPlatform. Все права защищены.</span>
+    </div>
+  </footer>
+  <button class="ai-assistant-btn" id="aiBtn">🤖 AI-ассистент</button>
+  <div class="ai-chat" id="aiChat">
+    <div class="ai-chat-header">AI-ассистент <span id="closeAi">×</span></div>
+    <div class="ai-chat-body">
+      <p>Задай вопрос по лекции!</p>
+      <input type="text" placeholder="Спроси меня..." />
+      <button>Отправить</button>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html> 

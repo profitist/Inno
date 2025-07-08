@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduPlatform Red&White</title>
+  <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;">
+      <div class="logo">EduPlatform</div>
+      <nav class="nav">
+        <a href="#courses">Курсы</a>
+        <a href="#advantages">Преимущества</a>
+        <a href="#login" class="btn" id="openModalBtn">Войти</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Кошелёк и жизнь:<br>курс об управлении личными финансами</h1>
+      <p>Научись управлять бюджетом, ставить финансовые цели и не попадаться мошенникам. Всё просто, понятно и современно.</p>
+      <button class="hero-btn" id="openModalBtn2">Пройти обучение</button>
+    </div>
+  </section>
+
+  <section class="courses" id="courses">
+    <div class="container">
+      <h2>Модули курса</h2>
+      <div class="course-cards">
+        <div class="course-card">
+          <h3>Бюджет: как считать деньги, а главное — зачем</h3>
+          <p>Поймёшь, как вести бюджет и зачем это нужно.</p>
+          <span class="level">3 темы • 8 мин</span>
+          <button class="course-btn">Как это работает</button>
+        </div>
+        <div class="course-card">
+          <h3>Хочу и могу: как ставить финансовые цели</h3>
+          <p>Научишься ставить цели и добиваться их.</p>
+          <span class="level">5 тем • 28 мин</span>
+          <button class="course-btn">Вперёд</button>
+        </div>
+        <div class="course-card">
+          <h3>Это тоже деньги: льготы, субсидии и вычеты</h3>
+          <p>Узнаешь, как получать выгоду от государства.</p>
+          <span class="level">8 тем • 49 мин</span>
+          <button class="course-btn">Научиться</button>
+        </div>
+        <div class="course-card">
+          <h3>Финансовые инструменты</h3>
+          <p>Разберёшься, как пользоваться картами, вкладами и кредитами.</p>
+          <span class="level">6 тем • 86 мин</span>
+          <button class="course-btn">Узнать больше</button>
+        </div>
+        <div class="course-card">
+          <h3>Финансовая безопасность</h3>
+          <p>Поймёшь, как не попасться мошенникам.</p>
+          <span class="level">4 темы • 21 мин</span>
+          <button class="course-btn">Как не попасться</button>
+        </div>
+        <div class="course-card">
+          <h3>Как научить ребёнка тратить деньги</h3>
+          <p>Научишься говорить с детьми о финансах.</p>
+          <span class="level">4 темы • 19 мин</span>
+          <button class="course-btn">Научиться</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="advantages" id="advantages">
+    <div class="container">
+      <h2>Почему выбирают наш курс?</h2>
+      <div class="adv-list">
+        <div class="adv-item"><strong>Просто и понятно</strong> — объясняем сложные вещи простым языком, без душных терминов.</div>
+        <div class="adv-item"><strong>Короткие уроки</strong> — проходи по пути на работу или вечером перед сном.</div>
+        <div class="adv-item"><strong>Жизненные примеры</strong> — только то, что пригодится в реальной жизни.</div>
+        <div class="adv-item"><strong>Бесплатно</strong> — курс доступен для всех после регистрации.</div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <span>© 2024 EduPlatform. Все права защищены.</span>
+    </div>
+  </footer>
+
+  <!-- Модальное окно -->
+  <div class="modal-bg" id="modalBg">
+    <form class="form-modal" id="loginForm" autocomplete="off">
+      <button class="close-modal" type="button" id="closeModalBtn">×</button>
+      <h2>Вход в профиль</h2>
+      <label for="email">Электронная почта</label>
+      <input type="email" id="email" required placeholder="you@email.com">
+      <label for="password">Пароль</label>
+      <input type="password" id="password" required placeholder="••••••••">
+      <button type="submit">Войти</button>
+      <div style="margin-top:18px;text-align:center;font-size:0.98rem;">
+        Нет аккаунта? <a href="#" style="color:var(--red);text-decoration:underline;">Зарегистрироваться</a>
+      </div>
+    </form>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
